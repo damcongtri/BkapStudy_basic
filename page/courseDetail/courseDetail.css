@@ -5,11 +5,33 @@
     position: fixed;
     z-index: 2;
     padding: 0px 15px;
+    /* height: 70px; */
+}
+
+.btn-hidden-menu {
+    width: 72px;
+    height: 72px;
+    background: #AB75F0;
+    margin-left: -15px;
+    display: none;
+}
+
+.btn-hidden-menu a {
+    border: none;
+    width: 72px;
+    height: 72px;
+}
+
+.btn-hidden-menu i {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    line-height: 56px;
 }
 
 /* search */
 
-.input {
+.search {
     background: #323653;
     width: 370px;
     height: 40px;
@@ -19,7 +41,7 @@
     border-radius: 40px;
 }
 
-.input input {
+.search input {
     width: 335px;
     background: #323653;
     border: none;
@@ -27,8 +49,20 @@
 
 }
 
-.input input:focus {
+.search i {
+    color: #AB75F0;
+    margin-right: 5px;
+}
+
+.search input:focus {
     outline: none;
+}
+
+.search-mobile i {
+    color: #AB75F0;
+    font-size: 23px;
+    margin-right: 10px;
+    display: none;
 }
 
 /* màu chữ input */
@@ -37,10 +71,6 @@
     /* opacity: 1; Firefox */
 }
 
-.input i {
-    color: #AB75F0;
-    margin-right: 5px;
-}
 
 /* login-button */
 
@@ -63,9 +93,7 @@
     min-height: 100vh;
     padding: 0px 10px;
 }
-.header{
-    
-}
+
 .menu-left .icon {
     width: 45px;
     height: 45px;
@@ -83,5 +111,71 @@
 
 .menu-left .icon-group {
     margin-top: 75px;
+
+}
+
+/* hidden-menu */
+.hidden-menu {
+    padding: 0px 21px;
+}
+
+.hidden-menu .text-hidden-menu {
+    color: #8896BD;
+    /* font-size: 18px; */
+}
+
+.icon-hidden-group {
+    margin-top: 75px;
+}
+
+.hidden-menu .icon-hidden-menu {
+    padding: 16px 0px;
+}
+
+.hidden-menu .icon-hidden-menu i {
+    color: #8896BD;
+    margin-right: 3px;
+}
+
+/* courseDetail */
+
+.courseDetail {
+    background: #252841;
+}
+
+@media screen and (max-width:1024px) {
+
+    /* carosel header  */
+    .btn-hidden-menu {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu-left {
+        min-height: 0vh;
+    }
+
+    .icon-group {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:428px) {
+
+    /* carosel search  */
+    .search {
+        display: none;
+    }
+
+    .search-mobile i {
+        display: block;
+    }
+
+
 
 }
