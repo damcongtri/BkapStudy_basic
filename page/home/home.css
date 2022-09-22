@@ -1,0 +1,338 @@
+:root{
+    --width-sidebar:320px
+}
+/* header */
+.header {
+    width: 100%;
+    background: #252841;
+    position: fixed;
+    z-index: 2;
+    padding: 0px 15px;
+}
+
+/* search */
+
+.input {
+    background: #323653;
+    width: 370px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    border-radius: 40px;
+}
+
+.input input {
+    width: 335px;
+    background: #323653;
+    border: none;
+    color: #8896BD;
+
+}
+
+.input input:focus {
+    outline: none;
+}
+
+/* màu chữ input */
+::placeholder {
+    color: #8896BD;
+    /* opacity: 1; Firefox */
+}
+
+.input i {
+    color: #AB75F0;
+    margin-right: 5px;
+}
+
+/* login-button */
+
+.bt-login button {
+    background: #AB75F0;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 40px;
+    padding: 7px 20px;
+}
+
+/* menu-left */
+
+.menu-left {
+    position: fixed;
+    z-index: 1;
+    background: #252841;
+    width: 70px;
+    min-height: 100vh;
+    padding: 0px 10px;
+}
+.header{
+    
+}
+.menu-left .icon {
+    width: 45px;
+    height: 45px;
+    background: #2E3048;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px 0px;
+
+}
+
+.menu-left .icon i {
+    color: #8896BD;
+}
+
+.menu-left .icon-group {
+    margin-top: 75px;
+
+}
+
+
+/* end header */
+
+
+
+
+
+/* HomePage */
+*{
+   
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.homepage {
+    background-color: #2d3049;
+    color: #fff;
+}
+.content-popular a {
+    color: #fff;
+    padding: 6px 10px;
+    background-color: rgba(255,255,255,0.03);
+    display: inline-block;
+}
+.item-popular{
+    padding: 5px;
+}
+p{
+    margin: 0;
+}
+/* Popular Toppic */
+.left-page .content-top .content-title{
+    background-color: #252841;
+    width: var(--width-sidebar);
+    max-width: 100%;
+    padding: 10px 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 3px;
+    
+}
+.content {
+    background-color: #252841;
+    width: var(--width-sidebar);
+    max-width: 100%;
+    padding: 10px 15px;
+}
+.content-popular .background {
+    color: #999ebe;
+    background-color: rgba(255,255,255,0.03);
+    padding: 0px 20px;
+    margin: 10px 0px;
+    
+}
+.content-popular .left{
+    margin-right: 10px;
+    padding: 10px 10px;
+    width: 135px;
+    max-width: 100%;
+
+}
+.content-popular .right  {
+    padding: 10px 10px;
+    width: 10px;
+    width: 135px;
+    max-width: 100%;
+}
+
+.left-page .content-down .content-title{
+    background-color: #252841;
+    width: var(--width-sidebar);
+    max-width: 100%;
+    padding: 10px 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 2px;
+}
+.content-down {
+    margin-top: 30px;
+}
+.all-category a{
+    text-decoration: none;
+    border-bottom: 1px solid #8b8ee4;
+    padding-bottom: 5px;
+    color: #8b8ee4;
+    font-size: 14px;
+}
+
+.right-page {
+    padding-top: 0px;
+    margin-left: 0;
+    margin-right: 5px;
+}
+/* Featured Course */
+
+.item-course {
+    background-color: #252841;
+}
+.item-course .card {
+    background-color: #252841;
+    width: 100%;
+    max-width: 100%;
+    
+
+}
+.course-text p {
+    font-size: 25px;
+}
+.full-container{
+    padding: 80px 0;
+}
+.homepage {
+    padding-top: 50px;
+}
+.right-page {
+    padding: 0px 0px 10px 30px;
+   
+}
+/* item-img */
+.item-img{
+    margin-top: 30px;
+
+
+}
+.course-img {
+    width: 110px;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+
+.text-course {
+    margin-top: 7px;
+    margin-left: 3px;
+}
+.text-course .name {
+    font-size: 16px;
+}
+.text-course p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.star-rating {
+    margin-top: 10px;
+}
+.star-rating i {
+    font-size: 13px;
+}
+.star-price {
+    align-items: center;
+}
+.price p{
+    font-size: 17px;
+}
+.item-course {
+   margin-top: 20px;
+}
+
+
+/* Latest course */
+.background {
+    background-color: #252841;
+}
+.img-latest {
+    padding: 14.5px;
+}
+.detail .item-latest .text-item{
+    padding: 0px 10px 10px 15px;
+}
+.margin {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.card-title {
+    margin-top: 15px;
+    font-size: 14px;
+}
+.text .author {
+  
+}
+.price-author {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.detail {
+    padding: 0px 0px;
+}
+.latest-course {
+ margin-top: 50px;
+}
+.latest-course .text {
+    margin-bottom: 20px;
+
+}
+.latest-course .text {
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+/* 1024 */
+@media screen and (max-width : 1024px) {
+    :root{
+        --width-sidebar:200px;
+    }
+    .menu-left{
+        display: none;
+    }
+    .latest-course .text {
+        font-size: 15px;
+    } 
+}
