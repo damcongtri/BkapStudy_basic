@@ -159,7 +159,7 @@
 
 .courseDetail .main .card {
     background: #252841;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 .courseDetail .main .left1 {
@@ -200,6 +200,29 @@
 
 .main .left2 .text_ i {
     margin-right: 10px;
+}
+
+.main .left2 .text-left2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main .left2 .text-left2 .text_1 {
+    border-top-left-radius: 10px;
+}
+
+.main .left2 .text-left2 .text_2 {
+    border-left: 2px solid black;
+    border-right: 1px solid black;
+}
+
+.main .left2 .text-left2 .text_3 {
+    border-left: 1.5px solid black;
+    border-right: 2px solid black;
+}
+
+.main .left2 .text-left2 .text_4 {
+    border-top-right-radius: 10px;
 }
 
 .main .right .text-card {
@@ -250,6 +273,27 @@
     font-weight: bolder;
     border-radius: 10px;
     margin-bottom: 13px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.main .right .text-card .btn1::before {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%) rotate(60deg);
+    background-color: #27043a;
+    -webkit-transition: 0.7s ease;
+    transition: 0.7s ease;
+}
+
+.main .right .text-card .btn1:hover::before {
+    height: 440%;
 }
 
 .main .right .text-card .btn2 {
@@ -261,10 +305,37 @@
     font-weight: bolder;
     border-radius: 10px;
     margin-bottom: 30px;
+    border: 2px solid #AB75F0;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .right .text-card .btn2::before {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%) rotate(60deg);
+    background-color: #AB75F0;
+    -webkit-transition: 0.7s ease;
+    transition: 0.7s ease;
+}
+
+.main .right .text-card .btn2:hover::before {
+    height: 440%;
+}
+
+.main .right .text-card .btn2:hover {
+    color: white;
 }
 
 .main .right .text-card .btn3 {
-    background-color: #F6DBFF;
+    /* background-color: #F6DBFF; */
+    background-color: #e9d8ff;
     color: #AB75F0;
     padding: 20px 20px;
     width: 100%;
@@ -272,6 +343,31 @@
     font-weight: bolder;
     border-radius: 10px;
     margin-top: 30px;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .right .text-card .btn3::before {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%) rotate(60deg);
+    background-color: #AB75F0;
+    -webkit-transition: 0.7s ease;
+    transition: 0.7s ease;
+}
+
+.main .right .text-card .btn3:hover::before {
+    height: 440%;
+}
+
+.main .right .text-card .btn3:hover {
+    color: white;
 }
 
 .main .right .text-card .btn3 i {
@@ -300,12 +396,46 @@
         display: none;
     }
 
+    /* courseDetail */
+    .courseDetail {
+        padding: 72px 0px 0px 0px;
+    }
 
+    .courseDetail .main .left2 {
+        margin-top: -350px;
+    }
+
+
+}
+
+@media screen and (max-width:800px) {
+    .main .left2 .text-left2 .text_ {
+        font-size: 12px;
+    }
+
+    .courseDetail .main .left2 {
+        margin-top: -500px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .search {
+        width: 220px;
+    }
+
+    .search input {
+        width: 160px;
+    }
 }
 
 @media screen and (max-width:428px) {
 
     /* carosel search  */
+    .courseDetail {
+        height: 2850px;
+    }
+
     .search {
         display: none;
     }
@@ -314,6 +444,31 @@
         display: block;
     }
 
+    /* left2 */
+    .courseDetail .main .left2 {
+        margin-top: 20px;
+    }
+
+    .main .left2 .text-left2 .text_1 {
+        border-bottom: 1px solid black;
+    }
+
+    .main .left2 .text-left2 .text_2 {
+        border-bottom: 1px solid black;
+        border-top-right-radius: 10px;
+        border-right: none;
+        border-left: 1px solid black;
+    }
+
+    .main .left2 .text-left2 .text_3 {
+        border-left: none;
+        border-right: none;
+    }
+
+    .main .left2 .text-left2 .text_4 {
+        border-top-right-radius: 0px;
+        border-left: 1px solid black;
+    }
 
 
 }
