@@ -10,35 +10,346 @@
     <!-- Bootstrap CSS v5.2.0-beta1 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./courseList.css">
 </head>
 
 <body>
-    <header>
-        <!-- place navbar here -->
-    </header>
+    <div class="header">
+        <div class="c">
+            <div class="d-flex justify-content-between" style="align-items: center;">
+                <div class="left">
+                    <div class="logo">
+                        <img src="/image/logo.png" width="90px" alt="">
+                    </div>
+                </div>
+                <div class="input">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input placeholder="Search courses, articles, videos,..." type="text">
+                </div>
+                <div class="bt-login">
+                    <button>Đăng nhập</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-left">
+        <div class="icon-group">
+            <div class="icon">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-regular fa-clipboard"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-display"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-chart-pie"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-address-card"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-newspaper"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-regular fa-circle-question"></i>
+            </div>
+            <div class=""></div>
+
+        </div>
+    </div>
     <main>
-        <div class="courses">
+        <div class="courses" style="padding-left: 70px;">
             <div class="banner">
                 <span>
                     Course List
                 </span>
             </div>
-            <div class="filter d-flex justify-content-end">
-                <div class="filter-course align-items-center me-3 mt-5 p-3 bg-danger " style="width: 100px;">
+            <div class="filter d-flex justify-content-between align-items-center p-3 text-light">
+                <h3 class="m-0">Course List</h3>
+                <div class="filter-course align-items-center p-2 bg-danger text-center" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" style="width: 100px;">
                     <span class="pe-2">Filter</span>
                     <i class="fa-solid fa-filter"></i>
                 </div>
             </div>
 
-            <div class="course-group">
-                <div class="course-item">
+            <div class="course-group d-flex flex-wrap">
+                <div class="course-item col-lg-3 col-md-4 col-xxl-2 col-sm-6">
+                    <div class="card card-course  text-light" style="width: 100%;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpANipqVkwmxwAvfs3JkcLk9U5clFljkM1g&usqp=CAU"
+                            class="card-img-top" alt="react">
+                        <div class="card-body">
+                            <p class="card-text fs-4">ReactJS</p>
+                            <div class="course-bottom d-flex justify-content-between align-items-center">
+                                <div class="item-bottom ">
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>100</span>
+                                </div>
+                                <div class="item-bottom">
+                                    <span>120 <i class="fa-solid fa-dollar-sign"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-item col-lg-3 col-md-4 col-xxl-2 col-sm-6">
+                    <div class="card card-course  text-light" style="width: 100%;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpANipqVkwmxwAvfs3JkcLk9U5clFljkM1g&usqp=CAU"
+                            class="card-img-top" alt="react">
+                        <div class="card-body">
+                            <p class="card-text fs-4">ReactJS</p>
+                            <div class="course-bottom d-flex justify-content-between align-items-center">
+                                <div class="item-bottom ">
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>100</span>
+                                </div>
+                                <div class="item-bottom">
+                                    <span>120 <i class="fa-solid fa-dollar-sign"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-item col-lg-3 col-md-4 col-xxl-2 col-sm-6">
+                    <div class="card card-course  text-light" style="width: 100%;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpANipqVkwmxwAvfs3JkcLk9U5clFljkM1g&usqp=CAU"
+                            class="card-img-top" alt="react">
+                        <div class="card-body">
+                            <p class="card-text fs-4">ReactJS</p>
+                            <div class="course-bottom d-flex justify-content-between align-items-center">
+                                <div class="item-bottom ">
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>100</span>
+                                </div>
+                                <div class="item-bottom">
+                                    <span>120 <i class="fa-solid fa-dollar-sign"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-item col-lg-3 col-md-4 col-xxl-2 col-sm-6">
+                    <div class="card card-course  text-light" style="width: 100%;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpANipqVkwmxwAvfs3JkcLk9U5clFljkM1g&usqp=CAU"
+                            class="card-img-top" alt="react">
+                        <div class="card-body">
+                            <p class="card-text fs-4">ReactJS</p>
+                            <div class="course-bottom d-flex justify-content-between align-items-center">
+                                <div class="item-bottom ">
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>100</span>
+                                </div>
+                                <div class="item-bottom">
+                                    <span>120 <i class="fa-solid fa-dollar-sign"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-item col-lg-3 col-md-4 col-xxl-2 col-sm-6">
+                    <div class="card card-course  text-light" style="width: 100%;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpANipqVkwmxwAvfs3JkcLk9U5clFljkM1g&usqp=CAU"
+                            class="card-img-top" alt="react">
+                        <div class="card-body">
+                            <p class="card-text fs-4">ReactJS</p>
+                            <div class="course-bottom d-flex justify-content-between align-items-center">
+                                <div class="item-bottom ">
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>100</span>
+                                </div>
+                                <div class="item-bottom">
+                                    <span>120 <i class="fa-solid fa-dollar-sign"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-item col-lg-3 col-md-4 col-xxl-2 col-sm-6">
+                    <div class="card card-course  text-light" style="width: 100%;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpANipqVkwmxwAvfs3JkcLk9U5clFljkM1g&usqp=CAU"
+                            class="card-img-top" alt="react">
+                        <div class="card-body">
+                            <p class="card-text fs-4">ReactJS</p>
+                            <div class="course-bottom d-flex justify-content-between align-items-center">
+                                <div class="item-bottom ">
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>100</span>
+                                </div>
+                                <div class="item-bottom">
+                                    <span>120 <i class="fa-solid fa-dollar-sign"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-item col-lg-3 col-md-4 col-xxl-2 col-sm-6">
+                    <div class="card card-course  text-light" style="width: 100%;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpANipqVkwmxwAvfs3JkcLk9U5clFljkM1g&usqp=CAU"
+                            class="card-img-top" alt="react">
+                        <div class="card-body">
+                            <p class="card-text fs-4">ReactJS</p>
+                            <div class="course-bottom d-flex justify-content-between align-items-center">
+                                <div class="item-bottom ">
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>100</span>
+                                </div>
+                                <div class="item-bottom">
+                                    <span>120 <i class="fa-solid fa-dollar-sign"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-item col-lg-3 col-md-4 col-xxl-2 col-sm-6">
+                    <div class="card card-course  text-light" style="width: 100%;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpANipqVkwmxwAvfs3JkcLk9U5clFljkM1g&usqp=CAU"
+                            class="card-img-top" alt="react">
+                        <div class="card-body">
+                            <p class="card-text fs-4">ReactJS</p>
+                            <div class="course-bottom d-flex justify-content-between align-items-center">
+                                <div class="item-bottom ">
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>100</span>
+                                </div>
+                                <div class="item-bottom">
+                                    <span>120 <i class="fa-solid fa-dollar-sign"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-item col-lg-3 col-md-4 col-xxl-2 col-sm-6">
+                    <div class="card card-course  text-light" style="width: 100%;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpANipqVkwmxwAvfs3JkcLk9U5clFljkM1g&usqp=CAU"
+                            class="card-img-top" alt="react">
+                        <div class="card-body">
+                            <p class="card-text fs-4">ReactJS</p>
+                            <div class="course-bottom d-flex justify-content-between align-items-center">
+                                <div class="item-bottom ">
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>100</span>
+                                </div>
+                                <div class="item-bottom">
+                                    <span>120 <i class="fa-solid fa-dollar-sign"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-filter">
+                    <div class="modal-content ">
+                        <div class="modal-header border-modal">
+                            <h5 class="modal-title" id="exampleModalLabel">Filter By Course</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group ps-5 pe-5">
+                                    <div class="filter-price d-flex mb-4 mt-2">
+                                        <div class="min-price col-lg-6 pe-3">
+                                            <span>Min Price: </span>
+                                            <span id="rangeValueMin">0</span>
+                                            <input class="range" type="range" value="0" min="0" max="1000"
+                                                onChange="rangeSlideMin(this.value)"
+                                                onmousemove="rangeSlideMin(this.value)"></Input>
+                                        </div>
+
+                                        <div class="max-price col-lg-6 ps-3">
+                                            <span>Max Price: </span>
+                                            <span id="rangeValueMax">0</span>
+                                            <input class="range " type="range" value="0" min="0" max="1000"
+                                                onChange="rangeSlideMax(this.value)"
+                                                onmousemove="rangeSlideMax(this.value)"></Input>
+                                        </div>
+                                    </div>
+                                    <div class="filter-categories">
+                                        <h6>Filter By Categories</h6>
+                                        <select class="form-select select-categories mt-3"
+                                            aria-label="Default select example">
+                                            <option selected>Open this select categories</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-tags mb-4 mt-3">
+                                        <h6>Fliter By Tags</h6>
+                                        <div class="tag-list d-flex">
+                                            <span class="tag-item" tabindex="1">Discount</span>
+                                            <span class="tag-item" tabindex="4">New</span>
+                                            <span class="tag-item" tabindex="5">Featured</span>
+                                        </div>
+                                    </div>
+                                    <div class="filter-status mb-4 mt-3">
+                                        <h6>Filter By Status</h6>
+                                        <div class="tag-list d-flex">
+                                            <span class="tag-item" tabindex="2">Finished</span>
+                                            <span class="tag-item" tabindex="2">Unfinished</span>
+                                            <span class="tag-item" tabindex="2">Update</span>
+                                        </div>
+                                    </div>
+                                    <div class="filter-date">
+
+                                        <span>Min Date: </span>
+                                        <span id="rangeValueDate">0</span>
+                                        <input class="range " type="range" value="2000" min="2000" max="2022"
+                                            onChange="rangeSlideDate(this.value)"
+                                            onmousemove="rangeSlideDate(this.value)"></Input>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="modal-footer border-modal">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn " style="background-color:#ab75f0;">Filter</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
+            <div class="tabs-product text-center mt-5">
+                <div class="btn-group me-2 text-align-center" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-outline-secondary active-tab-product">1</button>
+                    <button type="button" class="btn btn-outline-secondary">2</button>
+                    <button type="button" class="btn btn-outline-secondary">3</button>
+                    <button type="button" class="btn btn-outline-secondary">4</button>
+                </div>
+            </div>
         </div>
+
+        <script src="./courseList.js"></script>
+        <script>
+            function rangeSlideMin(value) {
+                document.getElementById('rangeValueMin').innerHTML = value;
+            }
+            function rangeSlideDate(value) {
+                document.getElementById('rangeValueDate').innerHTML = value;
+            }
+            function rangeSlideMax(value) {
+
+                if (value == 1000) {
+                    document.getElementById('rangeValueMax').innerHTML = value + '+';
+                } else {
+                    document.getElementById('rangeValueMax').innerHTML = value
+                }
+            }
+        </script>
     </main>
     <footer>
         <!-- place footer here -->
