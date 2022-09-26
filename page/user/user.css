@@ -191,7 +191,7 @@
 }
 .item-banner {
     width: 100%;
-    height: auto;
+    height: 400px;
 }
 .user-img-name img{ 
     width: 120px;
@@ -213,6 +213,7 @@
 
 .banner-user {
     position: relative;
+    
 }
 /* information-user */
 /* letf */
@@ -222,7 +223,10 @@
 }
 .introduce-active {
     border: 1px solid #AB75F0;
-    padding: 15px 0px 15px 30px;
+    padding: 30px;
+}
+.item-banner {
+    margin-top: 70px;
 }
 .information-user .left {
     padding: 0 100px 0 0;
@@ -233,7 +237,7 @@
     border: 1px solid #AB75F0;
 }
 .right .content-course a .infor-img {
-    width: 400px;
+    width: 500px;
     height: auto;
 }
 .content-course {
@@ -264,6 +268,10 @@ footer {
  }
  .text-footer .fa-solid {
      font-size: 20px;
+   
+ }
+ .fa-arrow-right {
+    margin-left: -17px;
  }
  .content-1 {
      margin-top: 40px;
@@ -385,5 +393,88 @@ footer {
 
 
 
+/* responsive */
+/* 1024 */
+@media screen and (max-width:1024px) {
+    .introduce-active p:first-child {
+        font-size: 15px;
+    }
+    .introduce-active p:last-child {
+        font-size: 13px;
+    }
 
+    .text-infor p:last-child {
+        font-size: 15px;
+        margin: 0;
+
+    }
+    .text-infor p:last-child {
+        font-size: 13px;
+        margin: 0;
+    }
+    .right .content-course a .infor-img {
+        width: 600px;
+        height: auto;
+    }
+}
+@media screen and (max-width:768px) {
+    .introduce-active p:first-child {
+        font-size: 25px;
+    }
+    .introduce-active p:last-child {
+        font-size: 20px;
+    }
+
+    .text-infor .i {
+        font-size: 25px;
+        
+
+    }
+    .text-infor p:last-child {
+        font-size: 20px;
+      
+    }
+    .right .content-course a .infor-img {
+        width: 100%;
+        height: auto;
+    }
+    .information-course {
+        margin-top: 40px;
+    }
+    .information-user .left {
+        padding: 0;
+    }
+}
+/* 992px  */
+@media screen and (max-width:992px) {
+    .information-course {
+        margin-top: 40px;
+    }
+}
+/* 425px  */
+@media screen and (max-width:426px) {
+   .content-course {
+    flex-wrap: wrap;
+   }
+   .introduce-active p:first-child {
+    font-size: 20px;
+}
+.introduce-active p:last-child {
+    font-size: 15px;
+}   
+
+.text-infor .i {
+    font-size: 20px;
+    
+
+}
+.text-infor p:last-child {
+    font-size: 15px;
+  
+}
+.text-infor {
+    text-align: center;
+}
+  
+}
 
