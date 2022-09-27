@@ -291,6 +291,19 @@ footer {
  .introduce .social-network .fa-brands {
      font-size: 30px;
  }
+ .user-img-name img{
+    background-color: #2d3049;
+ }
+ .img-thumbnail {
+    border: none;
+ } 
+ footer .social-network {
+    margin-top: 35px;
+
+ }
+ .fa-angle-right:hover {
+    color: #bfd2ff;
+ }
  
  
  
@@ -390,7 +403,9 @@ footer {
      font-size: 20px;
  }
  
-
+p {
+    margin: 0;
+}
 
 
 /* responsive */

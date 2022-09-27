@@ -109,3 +109,13 @@ main {
     font-size: 15px;
     color: #ccc;
 }
+.page-link:hover {
+    background-color: #AB75F0;
+    color: #fff;
+}
+.page-link {
+    background-color: #232841;
+    color: #AB75F0;
+    border: none;
+    border: 1px solid gray;
+}
